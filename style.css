@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    background-color: #85b0d5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #040569;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header .logo img {
+    width: 200px;
+    /* Sesuaikan lebar sesuai keinginan */
+    height: 80px;
+    /* Menjaga rasio aspek gambar */
+    margin-right: 10px;
+    /* Jarak antara logo dan teks */
+}
+
+.header .navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    Position: right;
+    Top: 0px;
+    Left: 200px
+}
+
+.header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    Position: right;
+    Top: 20px;
+    Left: 200px;
+    justify-items: center;
+}
+
+.header .navbar ul li a:hover {
+    color: #ffd700;
+    Position: right;
+    Top: 20px;
+    Left: 200px
+}
+.header{
+    height: 120px;
+}
+
+.logo{
+    position: relative;
+    top: 20px;
+}
+.navigasi {
+    position: relative;
+    width: 130px;
+    top: -20px;
+    Left: 1100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.nav:hover {
+    background-color: white;
+    color: #040569;
+}
+
+/* Styling untuk dropdown */
+.dropdown {
+    position: relative;
+    /* Untuk menempatkan konten dropdown relatif terhadap tombol */
+    display: inline-block;
+    /* Menampilkan tombol secara inline */
+}
+
+/* Tombol dropdown */
+.dropdown .dropbtn {
+    color: white;
+    background-color: #040569;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol dropdown saat hover */
+.dropdown .dropbtn:hover {
+    background-color: white;
+    /* Warna lebih gelap saat hover */
+    color: #040569;
+}
+
+/* Kontainer untuk isi dropdown */
+.dropdown-content {
+    display: none;
+    /* Default: tersembunyi */
+    position: absolute;
+    /* Lokasi relatif terhadap dropdown */
+    background-color: #040569;
+
+    /* Lebar minimal dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan */
+    z-index: 1;
+    /* Menempatkan dropdown di atas elemen lain */
+    overflow: hidden;
+    /* Menghindari elemen keluar dari kontainer */
+}
+
+/* Link di dalam dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    /* Menampilkan sebagai blok */
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efek hover untuk link */
+.dropdown-content a:hover {
+    background-color: white;
+    /* Warna biru saat hover */
+    color: #040569;
+    /* Teks putih saat hover */
+}
+
+/* Menampilkan dropdown saat hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Menampilkan konten */
+}
+
+.backhome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #040569;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero {
+    background: url(src)="image/bg.jpg" no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 450px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffd700;
+    ;
+    color: #2068a8;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #278ddb;
+}
+
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(16, 16, 16, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-links a {
+    color: hsl(30, 10%, 96%);
+    text-decoration: none;
+    float: right;
+    margin: 0 10px;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Tentang Kami Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    border-left: 10px solid #93bdde;
+}
+
+.about-text {
+    flex: 1.5;
+}
+
+.about-text h2 {
+    font-size: 3.0em;
+    line-height: 1.0;
+    color: #1c1e30;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fbf9f9;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    color: #e4dfdf;
+    font-weight: bold;
+}
+
+.about-text ul li:before {
+    content: "✔";
+    color: #2f2d27;
+    margin-right: 10px;
+}
+
+.pricing {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card h2 {
+    color: #93bdde;
+    ;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    background-color: #93bdde;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card .btn:hover {
+    background-color: #040569;
+    ;
+}
+
+/* Kontainer form */
+.form-container {
+    background-color: #040569;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(1, 22, 128, 0.1);
+    max-width: 600px;
+    max-height: 700px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 450px;
+}
+
+/* Judul form */
+.form-container h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #efe3e3;
+    font-weight: bold;
+}
+
+/* Label dan input */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f7eaea;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #93bdde;
+    outline: none;
+}
+
+/* Tombol Kirim Pesanan */
+.btn {
+    background-color: #93bdde;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: linear-gradient(45deg, #040569, #93bdde);
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
