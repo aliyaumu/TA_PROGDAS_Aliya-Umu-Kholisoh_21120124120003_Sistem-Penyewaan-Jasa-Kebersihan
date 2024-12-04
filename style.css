@@ -27,11 +27,8 @@ body {
 
 .header .logo img {
     width: 200px;
-    /* Sesuaikan lebar sesuai keinginan */
     height: 80px;
-    /* Menjaga rasio aspek gambar */
     margin-right: 10px;
-    /* Jarak antara logo dan teks */
 }
 
 .header .navbar ul {
@@ -128,9 +125,7 @@ body {
 
 .dropdown-content a:hover {
     background-color: white;
-    /* Warna biru saat hover */
     color: #040569;
-    /* Teks putih saat hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -214,7 +209,6 @@ body {
     object-fit: cover;
 }
 
-/* Footer */
 .footer {
     background-color: #343a40;
     color: #ffffff;
@@ -233,7 +227,6 @@ body {
     text-decoration: underline;
 }
 
-/* Tentang Kami Section */
 .about {
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -365,7 +358,6 @@ body {
     ;
 }
 
-/* Kontainer form */
 .form-container {
     background-color: #040569;
     padding: 30px;
@@ -435,7 +427,6 @@ input::placeholder {
     color: #aaa;
 }
 
-/* Responsif */
 @media (max-width: 480px) {
     .form-container {
         padding: 20px;
