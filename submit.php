@@ -82,18 +82,15 @@
         <h1>Detail Pesanan</h1>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Mendapatkan data dari form
             $nama = isset($_POST['nama']) ? $_POST['nama'] : null;
             $telepon = isset($_POST['telepon']) ? $_POST['telepon'] : null;
             $alamat = isset($_POST['alamat']) ? $_POST['alamat'] : null;
             $layanan = isset($_POST['layanan']) ? $_POST['layanan'] : null;
             $paket = isset($_POST['paket']) ? $_POST['paket'] : null;
 
-            // Validasi input
             if (!$nama || !$telepon || !$alamat || !$layanan || !$paket) {
                 echo "<p>Data tidak lengkap. Mohon isi semua field!</p>";
             } else {
-                // Harga layanan
                 $hargaLayanan = 0;
                 switch ($layanan) {
                     case "rumah":
