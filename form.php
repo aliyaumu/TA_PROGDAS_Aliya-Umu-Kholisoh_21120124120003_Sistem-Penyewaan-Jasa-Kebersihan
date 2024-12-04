@@ -34,7 +34,7 @@
     </div>
 
     <script>
-        // Class for handling form data with setter and getter
+        // Class setter and getter
         class FormDataHandler {
             constructor(nama, telepon, alamat, layanan, paket) {
                 this._nama = nama;
@@ -85,7 +85,6 @@
             }
         }
 
-        // Options for layanan and paket
         const layananOptions = [
             { value: "rumah", text: "Rumah", harga: 169000 },
             { value: "kantor", text: "Kantor", harga: 179000 },
@@ -108,7 +107,6 @@
             layananDropdown.appendChild(option);
         }
 
-        // Populate paket dropdown using for loop
         const paketDropdown = document.getElementById('paket');
         for (let i = 0; i < paketOptions.length; i++) {
             const option = document.createElement('option');
