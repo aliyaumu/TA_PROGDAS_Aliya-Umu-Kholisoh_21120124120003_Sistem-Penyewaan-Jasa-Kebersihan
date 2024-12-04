@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -30,7 +29,6 @@
         </div>
     </header>
 
-    <!-- Tentang Kami Section -->
     <section id="tentang-kami" class="aboutes">
         <div class="aboutes-cards">
             <div class="about-content">
@@ -58,7 +56,6 @@
     </section>
 
 
-    <!-- Layanan Section -->
     <section id="layanan" class="services">
         <h2>Layanan Kami</h2>
         <div class="service-cards">
