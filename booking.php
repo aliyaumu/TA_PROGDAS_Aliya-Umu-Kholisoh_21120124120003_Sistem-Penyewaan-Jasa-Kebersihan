@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -21,7 +20,7 @@
     </header>
 
     <?php
-    // Definisi kelas Layanan dengan getter dan setter
+    // class getter dan setter
     class Layanan {
         private $title;
         private $price;
@@ -50,7 +49,7 @@
         }
     }
 
-    // Array data layanan
+    // Array
     $layananList = [
         new Layanan("Bersih Harian Rumah", 169000, "form.php?service=rumah"),
         new Layanan("Bersih Harian Kantor", 179000, "form.php?service=kantor"),
@@ -58,7 +57,6 @@
     ];
     ?>
 
-    <!-- Harga Paket Section -->
     <section id="booking" class="pricing">
         <h2>Harga Paket Layanan AYA CLEAN</h2>
         <p>Dengan harga paket yang terjangkau, Anda sudah dapat layanan maksimal.</p>
