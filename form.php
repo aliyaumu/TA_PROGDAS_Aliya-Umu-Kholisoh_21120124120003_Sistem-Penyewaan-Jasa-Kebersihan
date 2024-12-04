@@ -97,7 +97,6 @@
             { value: "4-5 Ruangan", text: "4-5 Ruangan", multiplier: 3 }
         ];
 
-        // Populate layanan dropdown using for loop
         const layananDropdown = document.getElementById('layanan');
         for (let i = 0; i < layananOptions.length; i++) {
             const option = document.createElement('option');
