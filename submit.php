@@ -81,7 +81,6 @@
     <div class="container">
         <h1>Detail Pesanan</h1>
         <?php
-        // Mengecek metode request
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Mendapatkan data dari form
             $nama = isset($_POST['nama']) ? $_POST['nama'] : null;
@@ -108,7 +107,6 @@
                         break;
                 }
 
-                // Multiplier berdasarkan paket
                 $multiplier = 1;
                 switch ($paket) {
                     case "1 Ruangan":
@@ -122,10 +120,8 @@
                         break;
                 }
 
-                // Menghitung total harga
                 $totalHarga = $hargaLayanan * $multiplier;
 
-                // Menampilkan detail pesanan
                 echo "<div class='detail'><strong>Nama:</strong> $nama</div>";
                 echo "<div class='detail'><strong>Telepon:</strong> $telepon</div>";
                 echo "<div class='detail'><strong>Alamat:</strong> $alamat</div>";
