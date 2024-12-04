@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header */
 .header {
     background-color: #040569;
     display: flex;
@@ -89,15 +88,11 @@ body {
     color: #040569;
 }
 
-/* Styling untuk dropdown */
 .dropdown {
     position: relative;
-    /* Untuk menempatkan konten dropdown relatif terhadap tombol */
     display: inline-block;
-    /* Menampilkan tombol secara inline */
 }
 
-/* Tombol dropdown */
 .dropdown .dropbtn {
     color: white;
     background-color: #040569;
@@ -107,42 +102,30 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Tombol dropdown saat hover */
 .dropdown .dropbtn:hover {
     background-color: white;
     /* Warna lebih gelap saat hover */
     color: #040569;
 }
 
-/* Kontainer untuk isi dropdown */
 .dropdown-content {
     display: none;
-    /* Default: tersembunyi */
     position: absolute;
-    /* Lokasi relatif terhadap dropdown */
     background-color: #040569;
-
-    /* Lebar minimal dropdown */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Efek bayangan */
     z-index: 1;
-    /* Menempatkan dropdown di atas elemen lain */
     overflow: hidden;
-    /* Menghindari elemen keluar dari kontainer */
 }
 
-/* Link di dalam dropdown */
 .dropdown-content a {
     color: white;
     padding: 5px 10px;
     text-decoration: none;
     display: block;
-    /* Menampilkan sebagai blok */
     font-weight: normal;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efek hover untuk link */
 .dropdown-content a:hover {
     background-color: white;
     /* Warna biru saat hover */
@@ -150,10 +133,8 @@ body {
     /* Teks putih saat hover */
 }
 
-/* Menampilkan dropdown saat hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    /* Menampilkan konten */
 }
 
 .backhome {
@@ -400,7 +381,7 @@ body {
     margin-left: 450px;
 }
 
-/* Judul form */
+/* Judul formulir */
 .form-container h2 {
     margin-bottom: 5px;
     font-size: 28px;
@@ -408,7 +389,6 @@ body {
     font-weight: bold;
 }
 
-/* Label dan input */
 form label {
     display: block;
     text-align: left;
@@ -434,7 +414,6 @@ form select:focus {
     outline: none;
 }
 
-/* Tombol Kirim Pesanan */
 .btn {
     background-color: #93bdde;
     color: #fff;
@@ -452,7 +431,6 @@ form select:focus {
     background-color: linear-gradient(45deg, #040569, #93bdde);
 }
 
-/* Placeholder */
 input::placeholder {
     color: #aaa;
 }
