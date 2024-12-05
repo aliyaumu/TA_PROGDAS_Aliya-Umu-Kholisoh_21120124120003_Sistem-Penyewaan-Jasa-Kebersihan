@@ -115,11 +115,6 @@
             paketDropdown.appendChild(option);
         }
 
-        console.log(`Nama: ${formData.nama}`);
-        console.log(`Telepon: ${formData.telepon}`);
-        console.log(`Alamat: ${formData.alamat}`);
-        console.log(`Layanan: ${formData.layanan}`);
-        console.log(`Paket: ${formData.paket}`);
     </script>
 </body>
 </html>
